@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Myga</title>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function loadMap() {
+
+            var mapOptions = {
+                center: new google.maps.LatLng(17.609993, 83.221436),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("sample"), mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', loadMap);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="pre-header">
+            <div class="top">
+                <div class="premenu-left">
+                    <nav class="menu-icon">
+                        <a href="" class="float" title="+241 02 99 86 36"><i class="fa fa-phone my-float"></i></a>
+                        <a href="" class="float"><i class="fa fa-facebook my-float"></i></a>
+                        <a href="" class="float"><i class="fa fa-youtube my-float"></i></a>
+                    </nav>
+                </div>
+                <div class="premenu-langage">
+                    <form action="">
+                        <select name="" id="" class="select">
+                            <option value="">Français</option>
+                            <option value="">Anglais</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="top">
+                <div class="logo-left">
+                    <img src="img/logo.png" alt="" width="100">
+                </div>
+                <nav class="menu-principal">
+                    <a href="" class="active">ACCUEIL</a>
+                    <a href="">A PROPOS</a>
+                    <a href="">HEBERGEMENT</a>
+                    <a class="button" href="">S'INSCRIRE</a>
+                    <a class="button" href="">SE CONNECTER</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="caption">
+            <div class="info-slide">
+                <h2 class="titre-recherche">Enregistrez votre domaine .GA GRATUIT</h2><br><br>
+                <input type="text" class="recherche" placeholder="exemple:  Monsite.ga">
+                <a href="" class="submit"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="partener">
+        <h2 class="title-section">NOS PARTENAIRES</h2>
+        <div class="img-partener">
+            <img src="img/zte3.png" alt="">
+            <img src="img/huawei.png" alt="">
+            <img src="img/banque-mondiale.png" alt="">
+            <img src="img/logo (1).png" alt="">
+            <img src="img/fgis (1).png" alt="" style="width:250px;">
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2 class="title-section">NOS OFFRES</h2>
+        <div class="price">
+            <div class="price-name bg-green">
+                <h2>GRATUIT</h2>
+            </div>
+            <p class="price">0 XFA <span class="per-month">/mois</span></p>
+            <ul>
+                <li class=""><span>LIMITE</span> 2Go</li>
+                <li class=""><span>LIMITE</span> 2Go</li>
+                <li class=""><span>LIMITE</span> 2Go</li>
+                <li class=""><span>LIMITE</span> 2Go</li>
+                <li class=""><span>LIMITE</span> 2Go</li>
+            </ul>
+            <p class="buy"><a href="#" class="bg-green">Acheter</a><p>
+        </div>
+        <div class="price">
+            <div class="price-name bg-yellow">
+                <h2>BASIC</h2>
+            </div>
+            <p class="price">2000 XFA <span class="per-month">/mois</span></p>
+            <ul>
+                <li class=""><span>LIMITE</span> 40Go</li>
+                <li class=""><span>LIMITE</span> 40Go</li>
+                <li class=""><span>LIMITE</span> 40Go</li>
+                <li class=""><span>LIMITE</span> 40Go</li>
+                <li class=""><span>LIMITE</span> 40Go</li>
+            </ul>
+            <p class="buy"><a href="#" class="bg-yellow">Acheter</a>
+                <p>
+        </div>
+
+        <div class="price">
+            <div class="price-name bg-blue">
+                <h2>Pro</h2>
+            </div>
+            <p class="price">10000 XFA <span class="per-month">/mois</span></p>
+            <ul>
+                <li class=""><span>LIMITE</span> 99G0</li>
+                <li class=""><span>LIMITE</span> 99G0</li>
+                <li class=""><span>LIMITE</span> 99G0</li>
+                <li class=""><span>LIMITE</span> 99G0</li>
+                <li class=""><span>LIMITE</span> 99G0</li>
+            </ul>
+            <p class="buy"><a href="#" class="bg-blue">Acheter</a>
+                <p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="title-section">NOUS CONTACTER</h2>
+        <div class="grid">
+            <div class="contact-us" id="sample"></div>
+            <div class="contact-us formulaire">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="votre email">
+                    <input type="text" name="" id="" placeholder="votre Nom">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    <p class="buy"><a href="#" class="bg-green">Envoyer</a><p></p>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; Copyright 2018 Ecole241</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

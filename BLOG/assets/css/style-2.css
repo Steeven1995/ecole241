@@ -1,0 +1,52 @@
+@font-face {font-family: 'Open Sans Condensed';src: url('../fonts/OpenSansCondensed-Light.ttf');font-weight: 600;}
+@font-face {font-family: 'Grand Hotel';src: url('../fonts/GrandHotel-Regular.ttf');}
+nav a{
+    margin:0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6, p, span{
+    font-family: 'Open Sans Condensed', sans-serif !important; 
+}
+.logo{
+    margin-left:8%;
+    font-family: 'Grand Hotel',cursive !important;
+    font-size: 40px !important;
+}
+.logo-white{
+    text-decoration: none;
+    color: white;
+    margin-left:8%;
+    font-family: 'Grand Hotel',cursive !important;
+    font-size: 40px !important;
+}
+.logo-white:hover{
+    text-decoration: none;
+    color: antiquewhite;
+}
+footer img{
+    display: inline-block;
+    width: 8%;
+    margin-top:20px;
+    height: 100px; 
+}
+.icons{
+    display: inline-block;
+    background: black;
+    color:white;
+    padding:10px;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.icons i{
+    margin-top: 8px;
+    font-size: 20px;
+}
+.icons:hover{
+
+    color: antiquewhite;
+}

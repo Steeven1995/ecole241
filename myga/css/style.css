@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.bg-blue{
+    background-color:#187bec;
+}
+.bg-green{
+    background-color: #0C9;
+}
+.bg-yellow{
+    background-color: #968706;
+}
+.color-black{
+    color:rgb(100, 97, 97);
+    font-family: motion-picture;
+    font-size: 50px;
+}
+.color-green{
+    color:#009688;
+    font-family: motion-picture;
+    font-size: 50px;
+}
+.pre-header{
+    position: relative;
+    height: 50px;
+    background-color:#187bec;
+}
+.top{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+.premenu-left{
+margin: 0 auto;
+}
+.premenu-langage{
+    position: absolute;
+    left:85%;
+    bottom: 1px;
+}
+.select{
+    width: 150px;
+    height: 30px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    margin:0 12px;
+    margin-top: 8px;
+    font-size: 9px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-icon a{
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    margin:0 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+a.recherche{
+    margin-left:20px;
+}
+
+.header{
+    position: relative;
+    margin-top:30px;
+}
+.header a {
+    text-decoration: none;
+}
+.logo{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.menu-principal a{
+    text-decoration: none;
+    color:rgb(100, 97, 97);
+    display:inline;
+    position: relative;
+    bottom: 40px;
+    left:25%;
+    margin:0px 10px;
+    font-size:12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-principal a:hover, .active{
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+
+/* Style de la banniere */
+
+.banner{
+    position: relative;
+    background:url(../img/bg1.jpg) no-repeat;
+    background-size:cover;
+    height: 85vh;
+    -webkit-filter: brightness(100%);
+}
+.button {
+    background: #f7df0b;
+    border: 1px #f7df0b solid;
+    padding: 12px 12px;
+    font-weight: bold;
+    font-size: 10pt;
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-slide{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 13%;
+    width: 80%;
+}
+.titre-recherche{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center
+}
+.recherche{
+    height: 50px;
+    background: white;
+    width: 80%;
+    border-color: #0750ec;
+    border-radius: 5px;
+    opacity: 2;
+    font-size: 22px;
+    text-align: center;
+}
+.submit{
+    padding: 12px 12px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #0b79f7;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.float{
+	width:30px;
+	height:30px;
+	bottom:15px;
+	right:15px;
+	background-color:#0C9;
+	color:#FFF;
+    border-radius:50px;
+    text-align: center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:10px;
+}
+
+/* Animation de la banierre */
+
+.slider{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: slide 60s infinite;
+    overflow: hidden;
+}
+.slide:nth-child(1){
+    left:0%;
+    animation-delay: -10s;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(2){
+    animation-delay: 10s;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(3){
+    animation-delay: 20s;
+    background-image: url(../img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(4){
+    left:0%;
+    animation-delay: 30s;
+    background-image: url(../img/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide{
+    0%{
+        left:100%;
+        width: 100%;
+    }
+    5%{
+        left:0%;
+    }
+    25%{
+        left:0%;
+    }
+    30%{
+        left: -100%; 
+        width: 100%
+    }
+    30.0001%{
+        left:-100%;
+        width: 0%;
+    }
+    100%{
+        left:100%;
+        width: 0%;
+    }
+}
+.caption{
+    position: absolute;
+    width: 70%;
+    top:150px;
+    left:15%;
+    background:white;
+    min-height: 200px;
+    opacity: 0.9;
+    border-radius:3px;
+}
+
+/* Fin animation de la banniere */
+
+
+/* Style de la section Pricing */
+
+
+section.pricing{
+    position: relative;
+    background-color: rgb(240, 235, 235);
+}
+div.price{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 430px;
+    margin: 50px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+div.price-name{
+    height: 50px;
+}
+div.price-name h2{
+    text-align: center;
+    padding: 15px;
+}
+p.price{
+    text-align: center;
+    padding: 20px;
+    font-size:30px;
+}
+
+ul{
+   padding:10px 110px;
+}
+li{
+    padding-top:10px;
+}
+p.buy{
+   text-align: center;
+   padding: 10px;
+}
+p.buy a {
+   display:block;
+   padding: 12px 18px;
+   font-weight: 700;
+   font-size: 0.9rem;
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+   transition-property: color, text-shadow, background-color;
+   transition-duration: 250ms;
+   border-radius: 4px;
+}
+p.buy a:hover {
+  background-color: #999;
+ 
+ }
+/* fin de la partie Pricing */
+
+/* Section partener */
+
+.partener{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.title-section{
+    text-align: center;
+    padding: 30px 20px;
+    font-weight: bold;
+}
+.img-partener img{
+    padding: 40px;
+    width: 150px;
+}
+
+/* Fin de la section partenaire */
+
+/* SECTION CONTACT */
+section.contact{
+    position: relative;
+    background: #009688;
+    height: 600px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0px;
+}
+.contact-us{
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    width:90%;
+    height: 400px;
+    margin-left:3%;
+    background-color: #FFF;
+}
+.contact-us p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 12px;
+}
+.contact-us input[type]{
+    display: block;
+    margin-left:9%;
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    border:2px solid #ccc;
+    text-align: center;
+    font-size: 15px;
+    border-radius:3px; 
+}
+.contact-us textarea{
+    display: block;
+    margin-left:9%;
+    margin-top: 30px;
+    height: 150px;
+    width: 80%;
+    border:2px solid #ccc;
+    font-size: 15px;
+    border-radius:3px; 
+    
+}
+
+/* Fin de la section Contact */
+
+/* Section footer */
+.footer{
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+.footer p{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: 12px;
+}
+/* Section footer */
